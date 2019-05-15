@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* CSS variables */
+:root{
+    --primary-color:#CEC2C2;
+    --primary-color-:#DFCCC6;
+    --secondary-color:#CC9999;
+    --secondary-color-:#D2B5B5;
+    --light-color:#edf4f6;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #DFCCC6;
+  margin: 0;
+    color:white;
+    line-height: 1.6;
+}
+
+img{
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition:500ms ease-in-out ;
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    font-weight:400;
+}
+h1{
+    font-size:  50px;    
+}
+h2{
+    font-size:  32px;    
+}
+h3, h4{
+    font-size:  20px;    
+}
+
+/* Section */
+.section{
+    padding: 120px 32px;
+}
+
+.section-head{
+    font-size:40px;
+    margin:0;
+}
+
+.section h3{
+    font-size:32px;
+    color: #333;
+    max-width: 500px;
+    margin: auto;
+}
+
+section#split i{
+    font-size: 80px;
+    font-style: normal;
+    color: #EEEEEE;
+    display: block;
+  }
+
+  section#split h3{
+    color: #EEEEEE;
+  }
+
+.about{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about{
+    background: #fff;
+}
+
+hr{
+    border:0;
+    padding:0px;
+    margin:0;
+    border-bottom:2px solid #f1f1f1; 
+}
+
+/* Showcase */
+#showcase{
+    margin:0;
+    padding:0;
+    background: url(../img/waveblur.jpg) no-repeat center/cover fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+#showcase h1{
+    font-size: 50px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    color:black;
+    letter-spacing: 5px;
+}
+
+#showcase h2{
+    font-size: 20px;
+    color: black;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+
+/* Portfolio */
+
+#portfolio{
+    background: #fff;
+}
+
+#portfolio h3{
+    margin: 40px auto;
+    color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Portfolio hover effects */
+
+#portfolio .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+ .overlay:hover {
+  opacity: 0.9;
+}
+
+.text {
+  color: #333;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Contact form */
+
+#contact h3{
+    margin-top: 10px;
+}
+#contact p.lead{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+input{
+    width: 60%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+#msg{
+    margin-top: 55px;
+}
+
+::-webkit-input-placeholder{
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+ 
+button{
+    padding: 20px 32ox;
+    font-size: 18px;
+    width: 100px;
+    height: 60px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+button:hover{
+    background: #e9e3e3;
+}
+
+
+/* Footer */
+footer .footer-bottom{
+    background: #fff;
+    padding:30px 0px;
+    color: #333;
+    font-size: 14px;
+}
+
+footer a{
+    color: #333;
+}
+
+footer a:hover{
+    color: #999;
+}
+
+/* Global */
+.container{
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.lead{
+    font-size: 16px;
+    color:#333;
+}
+
+.text-center{
+    text-align:center;
+}
+
+/* Text colors */
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
+.bg-light{
+    background: var(--light-color);
+    color:#333;
+}
+
+
+/* Navigation */
+.logo {
+      line-height: 50px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #333;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+ 
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 50px;
+      z-index:1;
+      transition: 1s;
+}
+ 
+nav ul {
+      line-height: 50px;
+      list-style: none;
+      overflow: hidden;
+      color: #333;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+}
+ 
+nav.white ul {
+      background: #fff;
+}
+
+
+nav.white ul li a {
+      color:#333;
+}
+ 
+nav ul li {
+      display: inline-block;
+      padding: 16px 20px;
+}
+
+nav ul li.social {
+    padding: 16px 5px;
+}
+
+nav ul li.social:last-of-type {
+    padding-right: 0px;
+}
+ 
+nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+}
+ 
+.menu-icon {
+      line-height: 50px;
+      width: 100%;
+      background: #fff;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #333;
+      display: none;
+}
+
+/* Media */
+
+@media screen and (max-width: 580px) {
+    .section {
+        padding: 50px 32px;
+    }
+    
+    #showcase p.lead{
+        display:none;
+    }
+    
+    
+    #showcase{
+        height: 50vh;
+    }
+    
+    #showcase .container{
+        margin-top: 10vh;
+    }
+    
+    showcase h1{
+        font-size: 30px;
+    }
+    
+    showcase h2{
+        font-size: 18px;
+    }
+    
+ .logo {
+            line-height: 30px;
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+    }
+    
+ 
+      nav ul {
+          line-height: 20px;
+          max-height: 0px;
+            background: #fff;
+      }
+ 
+      nav.white ul {
+            background: #fff;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+          box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+            line-height: 20px;
+      }
+    
+    .about{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .about img{
+        display: none;    
+    }
+    
+    .column {
+    width: 100%;
+  }
+    
+    .text{
+        font-size: 14px;
+    }
+    
+    .input-fields {
+        padding: 0;
+    }
+    }
+    
+@media screen and (min-width: 581px) and (max-width: 1024px) {
+    
+    .logo {
+            line-height: 30px;
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+    }
+    
+ 
+      nav ul {
+          line-height: 20px;
+          max-height: 0px;
+            background: #fff;
+      }
+ 
+      nav.white ul {
+            background: #fff;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+          box-sizing: border-box;
+            width: 100%;
+            padding: 3px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+            line-height: 20px;
+      }
+    
+      .about{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+          text-align: center;
+    }    
+    
+    .about img {
+        display: none;
+    }
+    
+      .column {
+        width: 50%;
+  }
+    
+    .text{
+        font-size: 12px;
+    }
+    
+    .input-fields {
+        padding: 0;
+    }
+    
+}
+@media (max-width: 768px) {
+    #showcase p.lead{
+        display:none;
+    }
+    
+    .about{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        text-align: center;
+    }    
+    
+    .about img {
+        display: none;
+    }
+    
+    .text p{
+        display: none;
+    }
+}
